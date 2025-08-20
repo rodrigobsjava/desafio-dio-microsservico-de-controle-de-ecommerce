@@ -1,0 +1,17 @@
+spring:
+  devtools:
+    remote:
+      secret: 123
+    restart:
+      trigger-file: trigger.txt
+  rabbitmq:
+    host: rabbitmq
+    port: 5672
+    username: admin
+    password: admin
+    virtual-host: /
+    queue:
+      product-change-availability: product.change.availability.queue
+
+  server:
+    port: 8081
